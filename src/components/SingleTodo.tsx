@@ -76,9 +76,9 @@ const SingleTodo : React.FC<Props> = ({index, todo, todos, setTodos}) => {
 						<span className="icon" onClick={() => handleDelete(todo.id)}>
 							<AiFillDelete />
 						</span>
-						<span className="icon" onClick={() => handleDone(todo.id)}>
+{/*						<span className="icon" onClick={() => handleDone(todo.id)}>
 							<MdDone />
-						</span>
+						</span>*/}
 					</div>
 				</form>
 			)}
