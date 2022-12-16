@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { AiFillEdit, AiFillDelete } from 'react-icons/ai';
-import { MdDone } from 'react-icons/md';
+// import { MdDone } from 'react-icons/md';
 import { Draggable } from 'react-beautiful-dnd';
 import { Todo } from '../model';
 import './styles.css';
@@ -23,13 +23,13 @@ const SingleTodo : React.FC<Props> = ({index, todo, todos, setTodos}) => {
 		inputRef.current?.focus()
 	}, [edit])
 
-	const handleDone = (id: number) => {
-		setTodos(
-			todos.map((todo) =>
-				todo.id === id ? { ...todo, isDone: !todo.isDone} : todo
-			)
-		)
-	}
+	// const handleDone = (id: number) => {
+	// 	setTodos(
+	// 		todos.map((todo) =>
+	// 			todo.id === id ? { ...todo, isDone: !todo.isDone} : todo
+	// 		)
+	// 	)
+	// }
 
 	const handleDelete = (id: number) => {
 		setTodos(
